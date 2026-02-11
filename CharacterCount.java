@@ -1,12 +1,21 @@
-package Datatypes;
+package Introduction;
+import java.util.Scanner;
+
 public class CharacterCount {
     public static void main(String[] args) {
-        String str = "Hello World";
-        char c = 'l';
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = scanner.nextLine();
+        System.out.print("Enter the character to count: ");
+        char ch = scanner.next().charAt(0);
+        scanner.close();
+
         int count = 0;
-        for (char ch : str.toCharArray()) {
-            if (ch == c) count++;
+        for (int i = 0; i < str.length(); i++) {
+            if (ch == str.charAt(i)) {
+                count++;
+            }
         }
-        System.out.println("Count: " + count);
+        System.out.println("The character '" + ch + "' appears " + count + " times.");
     }
 }
