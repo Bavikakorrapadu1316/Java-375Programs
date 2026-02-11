@@ -1,14 +1,11 @@
 package Operators;
 
-public class SumOfDigits {
+public class SumEven {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 1234, sum = 0;
-		while (n != 0) {
-		    sum += n % 10;
-		    n /= 10;
-		}
+		int sum = 0;
+		for (int i = 2; i <= 100; i += 2) sum += i;
 		System.out.println("Sum: " + sum);
 
 
