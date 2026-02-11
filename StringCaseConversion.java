@@ -1,4 +1,4 @@
-package Datatypes;
+package Strings;
 public class StringCaseConversion {
     public static void main(String[] args) {
         String str = "Hello World";

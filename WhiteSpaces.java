@@ -1,7 +1,7 @@
 package Strings;
-public class StringLength {
+public class WhiteSpaces {
     public static void main(String[] args) {
         String str = "Hello World";
-        System.out.println("Length: " + str.length());
+        System.out.println("String without spaces: " + str.replace(" ", ""));
     }
 }

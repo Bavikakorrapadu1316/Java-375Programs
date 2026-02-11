@@ -1,4 +1,4 @@
-package Datatypes;
+package Strings;
 public class StringConcatenate {
     public static void main(String[] args) {
         String str1 = "Hello";
